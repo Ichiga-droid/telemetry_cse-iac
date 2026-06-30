@@ -8,7 +8,7 @@ provider "azurerm" {
 
 # Create Storage Account 
 resource "azurerm_storage_account" "sg1" { 
- name      =  "otstorageaccount_baokim" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
+ name      =  "otstorageaccountbaokim" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
  resource_group_name   =  var.rg_name
  location     =  var.location
  # Performance tier: Standard (HDD-backed)
@@ -30,7 +30,7 @@ resource "azurerm_storage_container" "newcontainer1" {
 
 # Create Storage Account 
 resource "azurerm_storage_account" "sg2" { 
- name      =  "csestologs_baokim" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
+ name      =  "csestologsbaokim" # add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
  resource_group_name   =  var.rg_name
  location     =  var.location
  # Performance tier: Standard (HDD-backed)
@@ -58,7 +58,7 @@ name    =  "sqlserver_baokim" # add your name to make it unique. Can only consis
 location    =  var.location 
 resource_group_name  =  var.rg_name  
 administrator_login   =  "Ichiga-droid" 
-administrator_password =  "PlopPlopPlop"
+administrator_password =  "PlopPlopPlop01"
  sku_name =  "B_Standard_B1ms" 
  version =  "8.0.21" 
  geo_redundant_backup_enabled = false 
